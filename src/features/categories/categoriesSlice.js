@@ -7,5 +7,5 @@ const categoriesSlice = createSlice({
     reducers:{}
 })
 
-export const selectArticles = state => state.categories.categories;
+export const selectCategories = state => state.categories.categories;
 export default categoriesSlice.reducer;

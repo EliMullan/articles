@@ -7,5 +7,5 @@ const authorsSlice = createSlice({
     reducers:{}
 })
 
-export const selectArticles = state => state.authors.authors;
+export const selectAuthors = state => state.authors.authors;
 export default authorsSlice.reducer;
