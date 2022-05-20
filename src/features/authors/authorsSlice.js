@@ -1,9 +1,11 @@
 import {createSlice} from '@reduxjs/toolkit';
 import { AUTHORS } from '../../app/data';
 
-const authorsSlice = createSlice({
-    title: 'authors',
-    initialState: AUTHORS,
+export const authorsSlice = createSlice({
+    name: 'authors',
+    initialState: {
+        authors: AUTHORS
+    },
     reducers:{}
 })
 

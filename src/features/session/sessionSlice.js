@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 const sessionSlice = createSlice({
-    title: 'session',
+    name: 'session',
     initialState: {
         user: {},
         isLoggedIn: false
@@ -23,5 +23,5 @@ const sessionSlice = createSlice({
 
 export const selectCurrentUser = state => state.session.user;
 export const selectIsLoggedIn = state => state.session.isLoggedIn;
-export const {signUp, editUser, signOut} = state => state.actions;
+export const {signUp, editUser, signOut} = sessionSlice.actions;
 export default sessionSlice.reducer;
